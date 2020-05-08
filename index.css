@@ -9,14 +9,15 @@ html {
 
 #container {
     max-width: 825px;
-    font-family: Georgia, Verdana, sans-serif;
-    font-size: 14px;
+    font-family: Calibri, Georgia, Verdana, sans-serif;
+    width: 840px;
 }
 
 ul {
     list-style-type: none;
 
 }
+
 li {
     padding-left: 20px;
     line-height: 150%
@@ -35,44 +36,48 @@ nav li {
 }
 
 header h1{
-    text-transform: capitalize;
     font-size: 2.5em;
-    font-style: bold;
+    font-weight: bold;
     margin: 10px 0px;
     clear: both;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 section{
 	display: flex;
+    overflow: hidden;
+    position: relative;
 	padding-top: 20px;
 	align-items: flex-end;
+    flex-wrap: wrap;
 }
 
-
-/*header {
-    position: fixed;*/
-}
 h3{
-	font-size: 1.5em;
-    text-transform: uppercase;
-    font-style: bold;
-	padding-top: 10px;
-	padding-bottom:5px;
+	font-size: 1.1em;
+    font-weight: bold;
+    padding-top: 10px;
 }
+
 h2{
-	font-size: 1.15em;
-    font-style: bold;
+	font-size: 1.2em;
+    font-weight: bold;
 }
+
+hr {
+    margin-top: 20px;
+    height:1px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+}
+
 p {
     line-height: 150%;
 }
 
-
-#work_experience {
-    clear: both;
+.squareList {
+    list-style-type: square;
+    list-style-position: inside;
 }
 
 .top_row {
@@ -97,40 +102,43 @@ p {
     text-align: center;
     bottom: 0px;
 }
-.category_content {
-    padding-top: 10px;
-}
 
 .category_title {
 	white-space: nowrap;
 	text-align: center;
-	vertical-align: center;
+    position: absolute;
 	left:0px;
 	bottom: 0;
 	padding-top:0px;
+    vertical-align: center;
+    position: center;
+
 }
 
 div.float_left{
-	-webkit-transform: rotate(-90deg);
+	
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-	
-	max-width: 25px;
-	padding-bottom:10px;
-	padding-top:0px;
+    -ms transform: rotate(-90deg);
+
+    -webkit-transform: rotate(-90deg);
+    display: block;
+    border: solid black 0px;
 	float: left;
-	text-align: left;	
+    clear: both;
+    overflow: visible;
+    height: 25px;
 }
 div.float_right{
 	display: block;
 	border: dashed 1px red;
-	min-width: 800px;
-	float: right;
-	border: solid black;
-	border-width: 0px 0px 0px 1px;
-	padding-left:10px;
+    width: 790px;
+	border: solid black 0px;
+	padding-left:15px;
+    clear: both;
+    overflow: auto;
 }
 
 footer {
